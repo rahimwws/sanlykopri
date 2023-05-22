@@ -1,6 +1,6 @@
 import React from "react";
-
-const Footer = () => {
+import { HomePage } from "../../assets/PagesText";
+const Footer = ({index}) => {
   return (
     <div id="footer">
       <div className="container">
@@ -16,20 +16,18 @@ const Footer = () => {
           <div className="col-2 row">
             <ul>
               <li>
-                <a href="">Чему вы научитесь</a>
+                <a href="">{HomePage.NavBar1[index]} </a>
               </li>
               <li>
-                <a href="">Процесс обучения</a>
+                <a href="">{HomePage.NavBar2[index]}</a>
               </li>
               <li>
-                <a href="">Стоимость</a>
+                <a href="">{HomePage.NavBar3[index]}</a>
               </li>
               <li>
-                <a href="">Контакты</a>
+                <a href="">{HomePage.NavBar4[index]}</a>
               </li>
-              <li>
-                <a href="">Регистрация</a>
-              </li>
+  
             </ul>
             <div>
               <h4>+993 61 22-22-02</h4>

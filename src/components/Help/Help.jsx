@@ -1,6 +1,6 @@
 import React from 'react'
-
-const Help = () => {
+import { HomePage } from '../../assets/PagesText'
+const Help = ({index}) => {
   return (
     <div id='help'>
         <div className="container">
@@ -9,14 +9,14 @@ const Help = () => {
                     <img src="images/help-1.png" alt="" />
                 </div>
                 <div className="col-2">
-                    <h2>Помощь и поддержка</h2>
-                    <p>Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему наставнику. Раз в несколько уроков вы будете получать большое задание, которое нужно будет сдавать на проверку код-ревьюеру. Он внимательно изучит ваш код, найдет ошибки и поможет вам стать лучше. </p>
+                    <h2>{HomePage.HelpMainText1[index]}</h2>
+                    <p>{HomePage.HelpText1[index]}</p>
                 </div>
             </div>
             <div className="row">
                 <div className="col-2">
-                    <h2>Помощь и поддержка</h2>
-                    <p>Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему наставнику. Раз в несколько уроков вы будете получать большое задание, которое нужно будет сдавать на проверку код-ревьюеру. Он внимательно изучит ваш код, найдет ошибки и поможет вам стать лучше. </p>
+                    <h2> {HomePage.HelpMainText2[index]} </h2>
+                    <p> {HomePage.HelpText2[index]} </p>
                 </div>
                 <div className="col-1">
                     <img src="images/help-2.png" alt="" />

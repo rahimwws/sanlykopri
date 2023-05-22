@@ -1,6 +1,6 @@
 import React from 'react'
-
-const Anounce = () => {
+import { HomePage } from '../../assets/PagesText'
+const Anounce = ({index}) => {
   return (
     <div id='anounce'>
         <div className="container">
@@ -9,10 +9,10 @@ const Anounce = () => {
                     <img src="images/anounce.png" alt="" />
                 </div>
                 <div className="col-2">
-                    <p>Все блоки проходятся строго по порядку. Пропустить какой-то блок или начать обучение с середины нельзя, даже если вы считаете, что уже знаете какую-то часть материала. Только так мы можем гарантировать, что вы получите все знания, предусмотренные учебной программой.</p>
+                    <p> {HomePage.Anounce[index]} </p>
                 </div>
                 <div className="col-3">
-                    <a href="" className='first-button'>начать обучение</a>
+                    <a href="" className='first-button'>{HomePage.MainBtn[index]} </a>
                 </div>
             </div>
         </div>
