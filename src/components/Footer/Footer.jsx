@@ -1,6 +1,8 @@
 import React from "react";
 import { HomePage } from "../../assets/PagesText";
-const Footer = ({index}) => {
+import { AppContext } from "../../App";
+const Footer = () => {
+  const {index} = React.useContext(AppContext)
   return (
     <div id="footer">
       <div className="container">

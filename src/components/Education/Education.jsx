@@ -1,6 +1,8 @@
 import React from 'react'
 import { HomePage } from '../../assets/PagesText'
-const Education = ({index}) => {
+import { AppContext } from '../../App'
+const Education = () => {
+  const {index} = React.useContext(AppContext)
   return (
     <div id='education'>
         <div className="container">

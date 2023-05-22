@@ -6,18 +6,19 @@ import HowEducate from '../../components/HowEducate/HowEducate'
 import Help from '../../components/Help/Help'
 import Anounce from '../../components/Anounce/Anounce'
 import Footer from '../../components/Footer/Footer'
+import Navbar from '../../components/Navbar/Navbar'
 
 const HomePage = () => {
-  const [index,setIndex] = useState(0)
   return (
     <>
-        <Header index = {index} />
-        <Technologies index = {index} />
-        <Education index = {index} />
-        <HowEducate index = {index} />
-        <Help index = {index} />
-        <Anounce index = {index} />
-        <Footer index = {index} />
+        <Navbar />
+        <Header/>
+        <Technologies/>
+        <Education/>
+        <HowEducate/>
+        <Help/>
+        <Anounce/>
+        <Footer/>
     </>
   )
 }

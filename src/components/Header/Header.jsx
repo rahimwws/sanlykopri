@@ -1,29 +1,11 @@
 import React from "react";
 import { HomePage } from "../../assets/PagesText";
-const Header = ({ index }) => {
+import { AppContext } from "../../App";
+const Header = () => {
+  const {index} = React.useContext(AppContext)
   return (
     <div id="header">
       <div className="container">
-      {/* <header className="row">
-        <span>LOGO</span>
-        <ul>
-          <li>
-            <a href="">{HomePage.NavBar1[index]}</a>
-          </li>
-          <li>
-            <a href="">{HomePage.NavBar2[index]}</a>
-          </li>
-          <li>
-            <a href="">{HomePage.NavBar3[index]}</a>
-          </li>
-          <li>
-            <a href="">{HomePage.NavBar4[index]}</a>
-          </li>
-        </ul>
-        <a href="" className="first-button">
-          {HomePage.MainBtn[index]}
-        </a>
-      </header> */}
         <div className="row">
           <div className="col-2">
             <h1>{HomePage.mainTextH1[index]}</h1>

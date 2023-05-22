@@ -1,6 +1,8 @@
 import React from 'react'
 import { HomePage } from '../../assets/PagesText'
-const Anounce = ({index}) => {
+import { AppContext } from '../../App'
+const Anounce = () => {
+    const {index} = React.useContext(AppContext)
   return (
     <div id='anounce'>
         <div className="container">

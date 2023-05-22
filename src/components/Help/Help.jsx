@@ -1,7 +1,9 @@
 import React from 'react'
 import { HomePage } from '../../assets/PagesText'
-const Help = ({index}) => {
-  return (
+import { AppContext } from '../../App'
+const Help = () => {
+    const {index} = React.useContext(AppContext)
+    return (
     <div id='help'>
         <div className="container">
             <div className="row">
