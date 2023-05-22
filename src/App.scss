@@ -54,6 +54,32 @@ body {
 }
 
 #header {
+  // background-image: url("./../public/images/photo_2023-05-22_18-52-55.jpg");
+  // background-repeat: no-repeat;
+  // background-position: right 0 bottom 10;
+  header{
+    // a{
+    //   padding: 15px 30px;
+    //   background-color: inherit;
+
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 75px;
+    ul{
+      list-style: none;
+      a{
+        color: #22253b;
+        text-decoration: none;
+      }
+      li{
+        float: left;
+        padding-left: 40px;
+      }
+    }
+  }
+  img{
+    width: 100%;
+  }
   padding: 50px 0 0;
   background-color: $color5;
   .col-2 {
@@ -103,6 +129,7 @@ body {
         animation: arrow-down 2s infinite;
         img {
           object-fit: cover;
+          // width: 10%;
         }
       }
     }

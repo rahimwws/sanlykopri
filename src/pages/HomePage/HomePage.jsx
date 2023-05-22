@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../../components/Header/Header'
 import Technologies from '../../components/Technologies/Technologies'
 import Education from '../../components/Education/Education'
@@ -8,15 +8,16 @@ import Anounce from '../../components/Anounce/Anounce'
 import Footer from '../../components/Footer/Footer'
 
 const HomePage = () => {
+  const [index,setIndex] = useState(0)
   return (
     <>
-        <Header />
-        <Technologies />
-        <Education />
-        <HowEducate />
-        <Help />
-        <Anounce />
-        <Footer />
+        <Header index = {index} />
+        <Technologies index = {index} />
+        <Education index = {index} />
+        <HowEducate index = {index} />
+        <Help index = {index} />
+        <Anounce index = {index} />
+        <Footer index = {index} />
     </>
   )
 }
