@@ -4,7 +4,7 @@ import { AppContext } from "../../App";
 const Footer = () => {
   const {index} = React.useContext(AppContext)
   return (
-    <div id="footer">
+    <footer id="footer">
       <div className="container">
         <div className="row">
           <div className="col-2">
@@ -40,7 +40,7 @@ const Footer = () => {
         <hr />
         <p>2023 Sanly Köpri - All Rigts Reserved</p>
       </div>
-    </div>
+    </footer>
   );
 };
 
