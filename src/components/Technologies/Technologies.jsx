@@ -17,7 +17,6 @@ const Technologies = () => {
                 <div className="col-2">
                     <h5>{HomePage.TechText[index]}</h5>
                     <div className="row2">
-                        <div className='inner-div'><p>{HomePage.Direction1[index]}</p></div>
                         <div className='inner-div'><p>{HomePage.Direction2[index]}</p></div>
                         <div className='inner-div'><p>{HomePage.Direction3[index]}</p></div>
                         <div className='inner-div'><p>{HomePage.Direction4[index]}</p></div>

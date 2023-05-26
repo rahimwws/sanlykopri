@@ -1,112 +1,94 @@
 import React from "react";
-import "./WebPage.scss";
-import { Sender } from "../../components/Sender/Sender";
-export const WebPage = () => {
+
+const WebPage = () => {
+  React.useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [])
   return (
-    <div className="WebPage">
-      <section className="Home">
-        <div className="row container">
-          <div className="col-1">
-            <h1>Web development</h1>
-            <p>
-              We create functional and stylish websites where every pixel is
-              designed to captivate
+    <div id="webpage">
+      <div className="container">
+        <h1>Разработка сайтов</h1>
+        <p className="title">
+          Разработка сайтов любой сложности с уникальным дизайном: корпоративные
+          сайты, порталы и сервисы. Гарантия. Поэтапная оплата.
+        </p>
+      </div>
+      <div className="box">
+        <div className="container row">
+          <div className="col-2">
+            <h2>Разработка сайтов с уникальным дизайном</h2>
+            <p className="box-text">
+              Важно понимать, что мы не делаем шаблонные сайты. Шаблонное
+              решение подходит для начала бизнеса, в успехе которого вы не
+              уверены. Риски велики, а бюджетов совсем нет.Но если сайт является
+              основой бизнеса (интернет-магазин, сайт заказа билетов, портал
+              объявлений) или важным элементом коммуникации с клиентом, то мы не
+              советуем и сами не предлагаем шаблонные решения.
+              <br />
+              <br />
+              <br />С нуля рисуем сайт, основываясь на опыте нашей команды и
+              пожеланиях заказчика. Дизайн дорабатывается до того момента, пока
+              не получим согласование.То есть у нас нет ограничения в количестве
+              макетов. Однако мы требуем от своих клиентов четкой постановки
+              задач и предоставления всех необходимых материалов.
             </p>
-            <a className="first-button">Get a quick consultation</a>
+            <a href="" className="first-button">
+              Оставить заявку
+            </a>
           </div>
           <div className="col-2">
-            <div className="row">
-              <div className="circle-1">
-                <p>WEB</p>
-              </div>
-              <div className="circle-2"></div>
-            </div>
+            <img src="images/web-page.png" alt="" />
           </div>
         </div>
-      </section>
-
-      <section className="advantages">
-        <div className="container">
-          <div className="col-1">
-            <h1>Преимущества</h1>
-            {/* <img src="images/web-1.png" alt="" /> */}
-          </div>
-          <div className="col-2">
-            <div className="item">
-              <h2>Модульный подход к архитектуре приложений</h2>
-              <div className="line"></div>
-              <p>
-                Модульность позволяет переиспользовать компоненты, упрощает
-                поддержку, создает среду для предсказуемого развития, ускоряет
-                рабочий процесс и сокращает количество ошибок.
-              </p>
-            </div>
-            <div className="item">
-              <h2>Используем востребованный стек</h2>
-              <div className="line"></div>
-              <p>
-                Осознанно ограничиваем свой стек технологиями, в которых
-                уверены, накопили опыт и наработки.
-              </p>
-            </div>
-            <div className="item">
-              <h2>Собственная выделенная команда</h2>
-              <div className="line"></div>
-              <p>
-                Собственная команда специалистов и полный набор компетенций в
-                команде: архитектура, front, back, тестирование, DevOps.
-              </p>
-            </div>
-          </div>
+      </div>
+      <div className="container row">
+        <div className="col-3">
+          <h2 className="price-text">
+            Сколько стоит заказ полноценного ваб-сайта ?
+          </h2>
+          <h4 className="price-desc">
+            Cтоимость сайта формируется из количества часов, которые специалисты
+            тратят на работу. Эта схема максимально прозрачна как для студии,
+            так и для наших клиентов.
+          </h4>
         </div>
-      </section>
-
-      <section className="access">
-        <div className="container">
-          <div className="row">
-            <h1>Подход</h1>
-            <h4>
-              Nimax Soft — это команда разработчиков, которая опирается на три
-              принципа организации работы:
-            </h4>
-          </div>
-          <div className="row">
-            <img src="/images/web-1.png" alt="" />
-            <div className="items">
-              <div className="access-item">
-                <p>Принцип №1</p>
-                <h3>
-                  Полный цикл разработки и все необходимые специалисты в штате.
-                  Использование внешних подрядчиков минимизировано
-                </h3>
-              </div>
-              <div className="access-item">
-                <p>Принцип №2</p>
-                <h3>
-                  Полный цикл разработки и все необходимые специалисты в штате.
-                  Использование внешних подрядчиков минимизировано
-                </h3>
-              </div>
-              <div className="access-item">
-                <p>Принцип №3</p>
-                <h3>
-                  Полный цикл разработки и все необходимые специалисты в штате.
-                  Использование внешних подрядчиков минимизировано
-                </h3>
-              </div>
-            </div>
-          </div>
+        <div className="col-3">
+          <h2 className="price-text">За какие сроки разрабатывается сайт?</h2>
+          <h4 className="price-desc">
+            Cтоимость сайта формируется из количества часов, которые специалисты
+            тратят на работу. Эта схема максимально прозрачна как для студии,
+            так и для наших клиентов.
+          </h4>
         </div>
-      </section>
-
-      <section className="project container">
-        <div className="row">
-          <div className="col-1">
-            <p>Оставьте заявку</p>
-          </div>
-          <Sender></Sender>
-        </div>
-      </section>
+      </div>
+      <div className="container">
+        <h5>
+          Какие вопросы должен решить для себя заказчик перед началом работы?
+        </h5>
+        <ul>
+          <li>
+            1. В первую очередь надо понимать, зачем делается сайт: для продаж,
+            для информирования клиентов, для коммуникации сотрудников?
+          </li>
+          <li>
+            2. Очень важно понимать, как будет продвигаться сайт: SEO,
+            контекстная реклама, социальные сети?
+          </li>
+          <li>
+            3. Кто будет работать с сайтом со стороны заказчика? Будет ли
+            ответственное лицо или руководитель сам будете управлять сайтом?
+          </li>
+          <li>
+            4. Готовы ли вы или ваши сотрудники выделить время на подготовку
+            контента для сайта?
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
+
+export default WebPage;

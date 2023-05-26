@@ -2,6 +2,7 @@ import React from "react";
 import { AppContext } from "../../App";
 import { HomePage } from "../../assets/PagesText";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { index, setIndex } = React.useContext(AppContext);
@@ -25,10 +26,10 @@ const Navbar = () => {
     <div id="navbar">
       <div className="container">
         <nav className="row">
-          <img src="images/logo.png" alt="" />
+          <Link to='/'><img src="images/logo.png" alt="" /></Link>
           <ul>
             <li>
-              <a href="">{HomePage.NavBar1[index]}</a>
+              <Link to="/">{HomePage.NavBar1[index]}</Link>
             </li>
             <li>
               <a href="">{HomePage.NavBar2[index]}</a>

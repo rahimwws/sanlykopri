@@ -376,7 +376,7 @@ body {
     margin-bottom: 30px;
   }
   .row {
-    div {
+    div, a {
       flex-basis: 32%;
       border-radius: 25px;
       background-color: $color5;
@@ -574,6 +574,89 @@ body {
   }
   p {
     text-align: center;
+  }
+}
+
+#webpage{
+  background-color: $color1;
+  padding: 150px 0 50px;
+  h1{
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  .title{
+    max-width: 625px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+  .box{
+    background-color: $color3;
+    padding: 50px;
+    margin-bottom: 50px;
+    h2{
+      color: $color1;
+      font-weight: 500;
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+    .col-2{
+      flex-basis: 48%;
+      .box-text{
+        letter-spacing: 1px;
+        line-height: 26px;
+        color: $color1;
+        margin-bottom: 30px;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .col-3{
+    flex-basis: 48%;
+    background-color: $color3;
+    border-radius: 15px;
+    cursor: pointer;
+    align-self: stretch;
+    padding: 50px;
+    opacity: 0.9;
+    transition: all .5s ease-in-out;
+    &:hover{
+      opacity: 1;
+      transition: all .5s ease-in-out;
+    }
+    .price-text{
+      font-weight: 600;
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: $color1;
+      border-radius: 25px;
+    }
+    .price-desc{
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      line-height: 28px;
+      color: $color1;
+    }
+  }
+  h5{
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  ul{
+    li{
+      text-align: left;
+      margin-bottom: 15px;
+      list-style: none;
+    }
   }
 }
 
