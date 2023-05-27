@@ -681,7 +681,7 @@ body {
   #education {
     padding-top: 0;
     .row {
-      div {
+      a {
         flex-basis: 48%;
       }
     }
@@ -774,6 +774,16 @@ body {
   }
 }
 
+@media only screen and (max-width: 600px){
+  #education {
+    .row {
+      a {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 550px) {
   #header {
     .col-2 {
@@ -837,7 +847,7 @@ body {
 @media only screen and (max-width: 500px) {
   #education {
     .row {
-      div {
+      a {
         flex-basis: 100%;
       }
     }
