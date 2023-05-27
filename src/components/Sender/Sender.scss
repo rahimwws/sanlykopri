@@ -1,0 +1,82 @@
+$color1: #fefdff;
+$color2: #ffffff;
+$color3: #38bff2;
+$color4: #f15525;
+$color5: #eaf2f5;
+$textcolor: #22253b;
+h1{
+    background: linear-gradient(270deg, #22253b 26.96%, #38bff2 93.64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 44px;
+    font-weight: 600;
+
+}
+form{
+    margin: 40px 0;
+    gap: 40px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+    input::placeholder{
+        color: #22253b;
+        font-size: 16px;
+    }
+    input:nth-child(1){
+        padding-left: 10px;
+        color: $textcolor;
+        font-size: 16px;
+        width: 50%;
+        height: 40px;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $color3;
+
+
+    }
+    input:nth-child(2){
+        padding-left: 10px;
+        color: $textcolor;
+        font-size: 16px;
+        height: 40px;
+        width: 50%;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $color3;
+
+
+    }
+    input:nth-child(3){
+        padding-left: 10px;
+        color: $textcolor;
+        font-size: 16px;
+        height: 40px;
+        width: 50%;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $color3;
+
+    }
+
+}
+@media screen and (max-width:400px){
+    h1{
+        font-size: 32px;
+    }
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        input:nth-child(1){
+            width: 100%;
+        }
+        input:nth-child(2){
+            width: 100%;
+        }
+        input:nth-child(3){
+            width: 100%;
+        }
+    }
+}

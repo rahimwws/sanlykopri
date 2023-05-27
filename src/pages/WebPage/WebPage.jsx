@@ -1,6 +1,8 @@
 import React from "react";
-
+import { WebText,HomePage } from "../../assets/PagesText";
+import { AppContext } from '../../App'
 const WebPage = () => {
+  const {index} = React.useContext(AppContext)
   React.useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -10,33 +12,23 @@ const WebPage = () => {
   return (
     <div id="webpage">
       <div className="container">
-        <h1>Разработка сайтов</h1>
+        <h1> {WebText.mainText[index]} </h1>
         <p className="title">
-          Разработка сайтов любой сложности с уникальным дизайном: корпоративные
-          сайты, порталы и сервисы. Гарантия. Поэтапная оплата.
+         {WebText.text[index]}
         </p>
       </div>
       <div className="box">
         <div className="container row">
           <div className="col-2">
-            <h2>Разработка сайтов с уникальным дизайном</h2>
+            <h2> {WebText.BoxMain[index]} </h2>
             <p className="box-text">
-              Важно понимать, что мы не делаем шаблонные сайты. Шаблонное
-              решение подходит для начала бизнеса, в успехе которого вы не
-              уверены. Риски велики, а бюджетов совсем нет.Но если сайт является
-              основой бизнеса (интернет-магазин, сайт заказа билетов, портал
-              объявлений) или важным элементом коммуникации с клиентом, то мы не
-              советуем и сами не предлагаем шаблонные решения.
+              {WebText.BoxText[index]}
               <br />
               <br />
-              <br />С нуля рисуем сайт, основываясь на опыте нашей команды и
-              пожеланиях заказчика. Дизайн дорабатывается до того момента, пока
-              не получим согласование.То есть у нас нет ограничения в количестве
-              макетов. Однако мы требуем от своих клиентов четкой постановки
-              задач и предоставления всех необходимых материалов.
+              <br /> {WebText.BoxText1[index]}
             </p>
             <a href="" className="first-button">
-              Оставить заявку
+              {HomePage.MainBtn[index]}
             </a>
           </div>
           <div className="col-2">
@@ -47,43 +39,37 @@ const WebPage = () => {
       <div className="container row">
         <div className="col-3">
           <h2 className="price-text">
-            Сколько стоит заказ полноценного ваб-сайта ?
+            {WebText.PriceMain1[index]}
           </h2>
           <h4 className="price-desc">
-            Cтоимость сайта формируется из количества часов, которые специалисты
-            тратят на работу. Эта схема максимально прозрачна как для студии,
-            так и для наших клиентов.
+          {WebText.PriceText1[index]}
           </h4>
         </div>
         <div className="col-3">
-          <h2 className="price-text">За какие сроки разрабатывается сайт?</h2>
+          <h2 className="price-text"> 
+          {WebText.PriceMain2[index]}
+          </h2>
           <h4 className="price-desc">
-            Cтоимость сайта формируется из количества часов, которые специалисты
-            тратят на работу. Эта схема максимально прозрачна как для студии,
-            так и для наших клиентов.
+          {WebText.PriceText2[index]}
           </h4>
         </div>
       </div>
       <div className="container">
         <h5>
-          Какие вопросы должен решить для себя заказчик перед началом работы?
+        {WebText["QuaMain"][index]}
         </h5>
         <ul>
           <li>
-            1. В первую очередь надо понимать, зачем делается сайт: для продаж,
-            для информирования клиентов, для коммуникации сотрудников?
+          {WebText["QuaItem-1"][index]}
           </li>
           <li>
-            2. Очень важно понимать, как будет продвигаться сайт: SEO,
-            контекстная реклама, социальные сети?
+          {WebText["QuaItem-2"][index]}
           </li>
           <li>
-            3. Кто будет работать с сайтом со стороны заказчика? Будет ли
-            ответственное лицо или руководитель сам будете управлять сайтом?
+          {WebText["QuaItem-3"][index]}
           </li>
           <li>
-            4. Готовы ли вы или ваши сотрудники выделить время на подготовку
-            контента для сайта?
+            {WebText["QuaItem-4"][index]}
           </li>
         </ul>
       </div>

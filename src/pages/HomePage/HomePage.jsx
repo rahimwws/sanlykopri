@@ -5,8 +5,7 @@ import Education from '../../components/Education/Education'
 import HowEducate from '../../components/HowEducate/HowEducate'
 import Help from '../../components/Help/Help'
 import Anounce from '../../components/Anounce/Anounce'
-// import Footer from '../../components/Footer/Footer'
-// import Navbar from '../../components/Navbar/Navbar'
+import { Faq } from '../../components/Faq/Faq'
 
 const HomePage = () => {
   return (
@@ -18,6 +17,8 @@ const HomePage = () => {
         <HowEducate/>
         <Help/>
         <Anounce/>
+        <Faq></Faq>
+        
         {/* <Footer/> */}
     </>
   )

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import "./Sender.scss"
 export const Sender = () => {
   const form = useRef();
 
@@ -29,7 +29,7 @@ export const Sender = () => {
       <input type="text" name="user_name" placeholder="Имя*" />
       <input type="email" name="user_email" placeholder="Email*"/>
       <input type="text" name="message" placeholder="Расскажите о проекте*"/>
-      <input type="submit" value="Send" className="button" />
+      <input type="submit" value="Send" className="first-button" />
     </form>
   );
 };

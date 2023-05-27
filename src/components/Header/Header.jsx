@@ -22,7 +22,7 @@ const Header = () => {
       </div>
       <div className="header-down">
         <div className="header-down-inner">
-          <a href="#help">
+          <a href="#education">
             <img src="images/arrow-down.png" alt="" />
           </a>
         </div>

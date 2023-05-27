@@ -1,11 +1,16 @@
 import React from "react";
 import { HomePage } from "../../assets/PagesText";
 import { AppContext } from "../../App";
+import { Sender } from "../Sender/Sender";
 const Footer = () => {
   const {index} = React.useContext(AppContext)
   return (
     <footer id="footer">
       <div className="container">
+        <div className="row"> 
+        <h1>Оставь заявку</h1>
+        <Sender></Sender>
+        </div>
         <div className="row">
           <div className="col-2">
             <img className="footer-logo" src="images/logo.png" alt="" />

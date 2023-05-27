@@ -1,0 +1,57 @@
+$color1: #fefdff;
+$color2: #ffffff;
+$color3: #38bff2;
+$color4: #f15525;
+$color5: #eaf2f5;
+$textcolor: #22253b;
+
+.Faq {
+    margin-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    h1{
+        padding: 90px 0 50px 0;
+        background: linear-gradient(270deg, #22253b 26.96%, #38bff2 93.64%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-size: 44px;
+        font-weight: 600;
+        border-bottom: 2px solid $color3;
+
+    }
+    details {
+        color: $textcolor;
+        font-size: 1.5rem;
+        border-bottom: 2px solid $color3;
+    }
+
+    summary {
+        padding: .5em 1.3rem;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        transition: height 1s ease;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    summary:after {
+        content: "\002B";
+    }
+
+    details[open] summary {
+        margin-bottom: .5em;
+    }
+
+    details[open] summary:after {
+        content: "\00D7";
+    }
+
+    details[open] div {
+        padding: .5em 1em;
+    }
+}
